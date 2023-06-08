@@ -1,7 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 const Home = () => {
-    
+    // about me
+    // resume attachement
+    // contact me
   return (
     <div>
       
