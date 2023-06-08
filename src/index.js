@@ -3,13 +3,16 @@ import ReactDOM  from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
+import { createRoot } from 'react-dom/client';
+import {BrowserRouter } from 'react-router-dom';
 // import { composeWithDevTools } from '@redux-devtools/extension';
-const container = document.getElementById('root');
-const root = ReactDOM.createRoute(container);
 
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <App />
+    <BrowserRouter>
+    <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
