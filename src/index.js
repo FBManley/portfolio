@@ -6,8 +6,11 @@ import './index.css';
 import { createRoot } from 'react-dom/client';
 import {BrowserRouter } from 'react-router-dom';
 // import { composeWithDevTools } from '@redux-devtools/extension';
+const domNode = document.getElementById('root');
+const root = createRoot(domNode);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
     <BrowserRouter>

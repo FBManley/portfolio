@@ -5,11 +5,12 @@ import React, {useState} from 'react';
 // import { Document, Page, pdfjs } from "react-pdf";
 // import pdfjsWorker from "pdfjs-dist/build/pdf.worker.entry";
 // pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker;
-import { Document, Page, pdfjs } from "react-pdf";
-import pdfjsWorker from "react-pdf/node_modules/pdfjs-dist/build/pdf.worker.entry";
+// import { Document, Page, pdfjs } from "react-pdf";
+// import pdfjsWorker from "react-pdf/node_modules/pdfjs-dist/build/pdf.worker.entry";
 
-pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker;
-
+// pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker;
+import { Worker, Viewer } from '@react-pdf-viewer/core';
+import '@react-pdf-viewer/core/lib/styles/index.css';
 
 const Resume = () => {
     const [error, setError] = useState(null);
@@ -23,9 +24,11 @@ const Resume = () => {
     
     <div>
     <div>
-      <Document file="http://www.pdf995.com/samples/pdf.pdf" onLoadError={handleLoadError}>
-        <Page pageNumber={1} />
-      </Document>
+      <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js" onLoadError={handleLoadError}>
+        <Viewer fileUrl="./resume.pdf">
+
+        </Viewer>
+      </Worker>
     </div>
     </div>
   )

@@ -1,5 +1,5 @@
 Portfolio Proj
--config middleware, check out flexbox, set up backened- architect basics then go 
+
 
 
 
