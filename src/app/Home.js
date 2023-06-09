@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-
+import Resume from './Resume.js'
 const Home = () => {
     
     // about me
@@ -19,8 +19,9 @@ const Home = () => {
     <br/>
     <section>
         <h2>Resume</h2>
+        <Resume />
         {/* <a href={}></a> */}
-        <p>Resume</p>
+        {/* <p>Resume</p> */}
     </section>
     </div>
   )
