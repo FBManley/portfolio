@@ -1,5 +1,8 @@
 import React, {useState} from 'react'
-import Resume from './Resume.js'
+// import Resume from './Resume.js'
+// import sample from './resume.pdf'
+import PDFFile from './PDF.js'
+
 const Home = () => {
     
     // about me
@@ -19,8 +22,9 @@ const Home = () => {
     <br/>
     <section>
         <h2>Resume</h2>
-        <Resume />
-        {/* <a href={}></a> */}
+        {/* <Resume /> */}
+        <PDFFile />
+        {/* <a href={sample}></a> */}
         {/* <p>Resume</p> */}
     </section>
     </div>
